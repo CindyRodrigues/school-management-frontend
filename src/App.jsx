@@ -3,6 +3,7 @@ import StudentView from './features/students/StudentView'
 import StudentForm from './features/students/StudentForm'
 import StudentDetail from './features/students/StudentDetail'
 import ClassView from './features/classes/ClassView'
+import SchoolView from './features/school/SchoolView'
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
           <Route path="/students/:studentId" element={<StudentDetail />} />
           <Route path="/classes" element={<ClassView />} />
           <Route path="/teachers" element={<StudentView />} />
-          <Route path="/school" element={<StudentView />} />
+          <Route path="/school" element={<SchoolView />} />
         </Routes>
       </Router>
     </div>

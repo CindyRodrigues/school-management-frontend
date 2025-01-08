@@ -49,7 +49,7 @@ const ClassView = () => {
                     <div className="col-md-6 mb-3">
                         <label htmlFor="filterByGender" className="form-label">Filter by Gender:</label>
                         <select id="filterByGender" className="form-select" onChange={handleFilterChange}>
-                            <option value="All">All</option>
+                            <option value="All" selected>All</option>
                             <option value="Boys">Boys</option>
                             <option value="Girls">Girls</option>
                         </select>
@@ -57,7 +57,7 @@ const ClassView = () => {
                     <div className="col-md-6 mb-3">
                         <label htmlFor="sortBy" className="form-label">Sort by:</label>
                         <select id="sortBy" className="form-select" onChange={handleSortChange}>
-                            <option value="name">Name</option>
+                            <option value="name" selected>Name</option>
                             <option value="marks">Marks</option>
                             <option value="attendance">Attendance</option>
                         </select>
