@@ -12,16 +12,16 @@ const Header = () => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className='navbar-nav'>
                             <li className='nav-item'>
-                                <NavLink to="/" className="nav-link active" aria-current="page">Students</NavLink>
+                                <NavLink to="/" className="nav-link">Students</NavLink>
                             </li>
                             <li className='nav-item'>
-                                <NavLink to="/" className="nav-link">Classes</NavLink>
+                                <NavLink to="/classes" className="nav-link">Classes</NavLink>
                             </li>
                             <li className='nav-item'>
-                                <NavLink to="/" className="nav-link">Teachers</NavLink>
+                                <NavLink to="/teachers" className="nav-link">Teachers</NavLink>
                             </li>
                             <li className='nav-item'>
-                                <NavLink to="/" className="nav-link">School</NavLink>
+                                <NavLink to="/school" className="nav-link">School</NavLink>
                             </li>
                         </ul>
                     </div>

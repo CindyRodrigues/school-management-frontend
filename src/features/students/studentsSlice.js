@@ -26,10 +26,17 @@ export const studentsSlice = createSlice({
     initialState: {
         students: [],
         status: "idle",
-        error: null
+        error: null,
+        filter: "All",
+        sortBy: "name"
     },
     reducers: {
-        
+        setFilter: (state, action) => {
+            state.filter = action.payload
+        },
+        setSortBy: (state,action) => {
+            state.sortBy = action.payload
+        }
     },
     extraReducers: (builder) => {
         builder.addCase(fetchStudents.pending, (state) => {
@@ -81,5 +88,7 @@ export const studentsSlice = createSlice({
         })
     }
 })
+
+export const { setFilter, setSortBy } = studentsSlice.actions
 
 export default studentsSlice.reducer

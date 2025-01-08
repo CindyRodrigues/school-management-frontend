@@ -84,10 +84,6 @@ const StudentForm = () => {
                             <input type="radio" id="female" value="Female" name="gender" className="form-check-input" onChange={handleChange} checked={formData.gender === "Female"} required />
                             <label htmlFor="female" className="form-check-label">Female</label>
                         </div>
-                        <div className="form-check form-check-inline">
-                            <input type="radio" id="other" value="Other" name="gender" className="form-check-input" onChange={handleChange} checked={formData.gender === "Other"} required />
-                            <label htmlFor="other" className="form-check-label">Other</label>
-                        </div>
                     </div>
                     {location.state && (
                         <>

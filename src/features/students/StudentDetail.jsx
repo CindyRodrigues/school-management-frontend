@@ -27,8 +27,8 @@ const StudentDetail = () => {
                         <p>Name: {student.name}</p>
                         <p>Age: {student.age}</p>
                         <p>Grade: {student.grade}</p>
-                        <p>Attendance: {student.attendance}</p>
-                        <p>Marks: {student.marks}</p>
+                        <p>Attendance: {student.attendance || "Unknown"}</p>
+                        <p>Marks: {student.marks || "Unknown"}</p>
                         <button className="btn btn-warning me-2">
                             <Link to="/students/add" state={student}>Edit Details</Link>
                         </button>
