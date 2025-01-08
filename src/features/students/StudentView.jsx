@@ -19,12 +19,12 @@ const StudentView = () => {
             <main className="container py-3">
                 <h1 className="mb-3">Student View</h1>
                 <button className="btn btn-warning mb-3">
-                    <Link to="/">Add Student</Link>
+                    <Link to="/students/add">Add Student</Link>
                 </button>
                 <h2>Student List</h2>
                 {status === "loading" && <p>Loading...</p>}
                 {error && <p>Error: {error}</p>}
-                <StudentList students={students} />
+                {status === "success" && students && <StudentList students={students} />}
             </main>
         </div>
     )
