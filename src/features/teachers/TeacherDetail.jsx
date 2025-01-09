@@ -1,13 +1,21 @@
-import { Link, useParams } from "react-router-dom"
+import { Link, useNavigate, useParams } from "react-router-dom"
 import Header from "../../components/Header"
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
+import { deleteTeacherAsync } from "./teachersSlice"
 
 const TeacherDetail = () => {
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
     const { teacherId } = useParams()
     const { teachers } = useSelector((state) => state.teachers)
     const teacher = teachers.find((teacher) => teacher._id === teacherId)
 
-    const handleDelete = () => {}
+    const handleDelete = () => {
+        dispatch(deleteTeacherAsync(teacherId))
+        setTimeout(() => {
+            navigate("/teachers")
+        }, 1000)
+    }
 
     return (
         <div>
