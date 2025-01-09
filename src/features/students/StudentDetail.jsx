@@ -27,6 +27,7 @@ const StudentDetail = () => {
                         <p>Name: {student.name}</p>
                         <p>Age: {student.age}</p>
                         <p>Grade: {student.grade}</p>
+                        <p>Gender: {student.gender}</p>
                         <p>Attendance: {student.attendance || "Unknown"}</p>
                         <p>Marks: {student.marks || "Unknown"}</p>
                         <button className="btn btn-warning me-2">
