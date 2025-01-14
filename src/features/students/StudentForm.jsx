@@ -2,7 +2,6 @@ import { useState } from "react"
 import { useDispatch } from "react-redux"
 import { addStudentAsync, updateStudentAsync } from "./studentsSlice"
 import { useLocation, useNavigate } from "react-router-dom"
-import Header from "../../components/Header"
 
 const StudentForm = () => {
     const dispatch = useDispatch()
@@ -57,7 +56,6 @@ const StudentForm = () => {
 
     return (
         <div>
-            <Header />
             <main className="container py-3">
                 <h1 className="mb-3">{location.state ? "Edit Student" : "Add Student"}</h1>
                 <form onSubmit={handleSubmit}>

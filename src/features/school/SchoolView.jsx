@@ -1,6 +1,5 @@
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import Header from "../../components/Header"
 import { updateSchoolStats, setTopStudent } from "./schoolSlice"
 import { fetchStudents } from "../students/studentsSlice"
 import { fetchTeachers } from "../teachers/teachersSlice"
@@ -28,7 +27,6 @@ const SchoolView = () => {
 
     return (
         <div>
-            <Header />
             <main className="container py-3">
                 <h1 className="mb-3">School View</h1>
                 <p>Total Students: {schoolStatistics.totalStudents}</p>

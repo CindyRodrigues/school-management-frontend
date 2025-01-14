@@ -1,5 +1,4 @@
 import { useState } from "react"
-import Header from "../../components/Header"
 import { useLocation, useNavigate } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { addTeacherAsync, updateTeacherAsync } from "./teachersSlice"
@@ -57,7 +56,6 @@ const TeacherForm = () => {
 
     return (
         <div>
-            <Header />
             <main className="container py-3">
                 <h1 className="mb-3">{location.state ? "Edit Teacher" : "Add Teacher"}</h1>
                 <form onSubmit={handleSubmit}>

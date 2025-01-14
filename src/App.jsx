@@ -7,12 +7,14 @@ import SchoolView from './features/school/SchoolView'
 import TeacherView from './features/teachers/TeacherView'
 import TeacherForm from './features/teachers/TeacherForm'
 import TeacherDetail from './features/teachers/TeacherDetail'
+import Header from './components/Header'
 
 function App() {
 
   return (
     <div>
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<StudentView />} />
           <Route path="/students/add" element={<StudentForm />} />

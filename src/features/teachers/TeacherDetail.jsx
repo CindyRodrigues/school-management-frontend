@@ -1,5 +1,4 @@
 import { Link, useNavigate, useParams } from "react-router-dom"
-import Header from "../../components/Header"
 import { useDispatch, useSelector } from "react-redux"
 import { deleteTeacherAsync } from "./teachersSlice"
 
@@ -19,7 +18,6 @@ const TeacherDetail = () => {
 
     return (
         <div>
-            <Header />
             <main className="container py-3">
                 <h1 className="mb-3">Teacher Detail</h1>
                 {teacher && (

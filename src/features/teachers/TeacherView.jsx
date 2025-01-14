@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import Header from "../../components/Header"
 import { useDispatch, useSelector } from "react-redux"
 import TeacherList from "./TeacherList"
 import { useEffect } from "react"
@@ -15,7 +14,6 @@ const TeacherView = () => {
 
     return (
         <div>
-            <Header />
             <main className="container py-3">
                 <h1 className="mb-3">Teacher View</h1>
                 <button className="btn btn-warning mb-3">

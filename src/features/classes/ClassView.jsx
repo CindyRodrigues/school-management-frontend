@@ -1,4 +1,3 @@
-import Header from "../../components/Header"
 import { useDispatch, useSelector } from "react-redux"
 import { fetchStudents, setFilter, setSortBy } from "../students/studentsSlice"
 import { useEffect } from "react"
@@ -42,7 +41,6 @@ const ClassView = () => {
 
     return (
         <div>
-            <Header />
             <main className="container py-3">
                 <h1 className="mb-3">Class View</h1>
                 <div className="row">

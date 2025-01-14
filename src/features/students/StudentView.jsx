@@ -1,7 +1,6 @@
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { fetchStudents } from "./studentsSlice"
-import Header from "../../components/Header"
 import { Link } from "react-router-dom"
 import StudentList from "./StudentList"
 
@@ -15,7 +14,6 @@ const StudentView = () => {
 
     return (
         <div>
-            <Header />
             <main className="container py-3">
                 <h1 className="mb-3">Student View</h1>
                 <button className="btn btn-warning mb-3">
